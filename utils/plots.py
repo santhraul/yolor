@@ -166,7 +166,7 @@ def plot_images(images, targets, paths=None, fname='images.jpg', names=None, max
                             cls = names[0]
                         else:
                             cls = names[cls]
-                 except Exception as e:
+                except Exception as e:
                     pass
                 if labels or conf[j] > 0.25:  # 0.25 conf thresh
                     label = '%s' % cls if labels else '%s %.1f' % (cls, conf[j])
